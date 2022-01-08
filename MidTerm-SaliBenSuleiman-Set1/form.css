@@ -1,0 +1,172 @@
+
+                 .float-container 
+                 {
+                     border: 3px solid #fff;
+                     padding: 50px;
+                   
+                 }
+         
+                 .float-child1
+                 {   margin: auto;
+                     width: 50%;
+                     /* float:center; */
+                     padding: 10px;
+                     border: 2px solid rgb(255, 0, 157);
+                     border-radius: 25px;
+                     text-align: center;
+                     background-color: #fcf4f4;
+                     color:#1c87c9;
+                 }
+                  #Store_Info{
+                      font-size: small;
+                  }
+                 .float-child2 
+                 {
+                     width: 40%;
+                     float: right;
+                     padding: 30px;
+                     border: 2px solid rgb(255, 0, 212);
+                     border-radius: 25px;
+                     text-align: center;
+                     background-color: #eff0de;
+                 }
+         
+                 table
+                 {margin: 0 auto} 
+                 td,
+                 th 
+                 {
+                     border: 1px solid rgb(252, 240, 240);
+                     border-collapse: collapse;
+                     padding: 10px;
+                     font-size: 12px;
+                 }
+           
+
+
+                 body{
+                    background-color: white;
+                    font-family: sans-serif;
+                    font-size: 20px;
+                } 
+                h1, h2, h3{
+                    text-align: center;
+                }
+                #errors{
+                    color: black;
+                    font-family: cursive;
+                    font-size: 26px;
+                    line-height: 34px;
+                    text-align: center;
+                    padding: 10px;
+                    margin: 0;
+                    border-radius: 10px;
+                
+                }
+                form, .User_Data{
+                    width: 80%;
+                    border: 3px solid rgb(218, 5, 5);
+                    box-shadow: 0 0 10px #2c2c2c;
+                    padding: 30px;
+                    margin: 50px auto;
+                    color: black;
+                    background-color: white;
+                    border-radius: 10px;
+                }
+                .All{
+                    border: 3px solid #fff;
+                    padding: 50px;
+                }
+                .Left
+                {
+                    width: 50%;
+                            float: left;
+                            padding: 10px;
+                            border: 2px solid rgb(255, 0, 157);
+                            border-radius: 25px;
+                            text-align: center;
+                            background-color: #fcf4f4;
+                }
+                .Right
+                {
+                    width: 40%;
+                    float: right;
+                    padding: 10px;
+                    border: 2px solid rgb(255, 0, 157);
+                    border-radius: 25px;
+                    text-align: center;
+                    background-color: #fcf4f4;
+                }
+                label{
+                    width: 250px;
+                    display: inline-block;
+                    font-size: 18px;
+                    color: black;
+                }
+                input:not([type="radio"]), select{
+                    font-size: 16px;
+                    font-family: sans-serif;
+                    padding: 5px 10px;
+                }
+                input:not([type="radio"]){
+                    width: 170px;
+                    height: 30px;
+                    margin-bottom: 10px;
+                }
+                select{
+                    width: 190px;
+                    margin-top: 10px;
+                }
+                input[type="submit"]{
+                    width: 30%;
+                    font-size: 22px;
+                    background-color: black;
+                    color: white;
+                    font-family: sans-serif;
+                    border: 0px;
+                    padding: 10px;
+                    height: 50px;
+                    border-radius: 8px;
+                }
+                input[type="submit"]:active{
+                    box-shadow: -4px -4px 0px black;
+                }
+                table{
+                    width: 50%;
+                    border-collapse: collapse;
+                    border: solid rgb(226, 221, 221);
+                    margin: 10px;
+                }
+                table, td{
+                    min-width: 100px;
+                    border: 2px solid rgb(226, 221, 221);
+                    padding: 5px ;
+                    font-size: small;
+                }
+                table, th{ margin:auto auto ;
+                    min-width: 100px;
+                    text-align: center;
+                    padding: 10px ;
+                    font-size:small;
+                    color: #1c87c9;
+                   
+                     
+                }
+                table.receipt{
+                    text-align: right;
+                }
+                
+                .openButton {
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #1c87c9;
+                    color: white;
+                    padding: 14px 20px;
+                    cursor: pointer;
+                    position: fixed;
+                  }
+                  
+                  #T-Shirts_info , #Jackets_info, #Caps_info{
+                    display: none;
+                    font-size: small;
+                }                
