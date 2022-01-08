@@ -1,0 +1,105 @@
+<!-- Web Application For Jack’s Wholesale Shop
+     Midterm Set 1
+   
+   
+     Revision history
+         Sali Ben Suleiman, 2021.07.08: Created  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms and Validations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="formtest.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+    <div class="All">
+        <div class="Left">
+
+            <form name="Left_form" method="Post" onsubmit="return User_Info_With_Ordered_Products();"
+                action="/action_page.php">
+
+                <label>Name</label>
+                <input id="Full_Name" placeholder="First Last" type="text" name="Full_Name ">
+                <br />
+
+                <label>Email</label>
+                <input id="email" placeholder="userName@info.com" type="text" name="email">
+                <br />
+
+                <label>Expiry Year</label>
+                <input id="Phone_Number" placeholder="(xxx)-xxx-xxxx" type="text" name="Phone_Number">
+                <br />
+
+                <label>Credit Card</label>
+                <input id="Credit_Card" placeholder="xxxx-xxxx-xxxx-xxxx" type="text" name="Credit_Card">
+                <br />
+
+                <label>Expiry Month</label>
+                <input id="Credit_Month" placeholder="MMM" type="text" name="Credit_Month">
+                <br />
+
+                <label>Expiry Year</label>
+                <input id="Credit_Year" placeholder="YYYY" type="text" name="Credit_Year">
+                <br />
+
+
+
+                <br />
+                <p id="Middle-title">Please pick from the following list</p>
+                <br />
+                <br />
+
+                <label>Numbr of T-Shirts($15)</label>
+                <input id="T-Shirts" placeholder="" type="text" name="T-Shirts" oninput=Is_There_Input1++>
+                <br />
+
+                <label>Numbr of Jackets($50)</label>
+                <input id="Jackets" placeholder="" type="text" name="Jackets" oninput=Is_There_Input2++>
+                <br />
+
+                <label>Numbr of Caps($10)</label>
+                <input id="Caps" placeholder="" type="text" name="Caps" oninput=Is_There_Input3++>
+                <br />
+
+
+                <br />
+
+                <input type="submit" value="Check_Out">
+                <p id="Error_Displayed_In_Page"></p>
+            </form>
+
+            <div class="User_Data">
+                <p id="Dsplay_User_Data">This is where the form data will show up.</p>
+            </div>
+        </div>
+
+        <div class="Right">
+            <p>Receipt<br> Thank you for shopping with us</p>
+            <br>
+
+            <table id="User_Info">
+                <tbody></tbody>
+            </table>
+            <br>
+            <br>
+
+            <table id="Receipt">
+                <tbody></tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
