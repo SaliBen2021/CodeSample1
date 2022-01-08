@@ -1,0 +1,105 @@
+<!-- Web Application For Jack’s Wholesale Shop
+     Midterm Set 1
+   
+   
+     Revision history
+         Sali Ben Suleiman, 2021.07.08: Created  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="formtest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script>
+            $(document).ready(function () 
+            {
+            $("#Show_T-Shirts_info").click(function () 
+            {
+                $("#T-Shirts_info").toggle();
+            });
+
+            $("#Show_Jackets_info").click(function () 
+            {
+                $("#Jackets_info").toggle();
+            });
+
+            $("#Show_Caps_info").click(function ()
+             {
+                $("#Caps_info").toggle();
+            });
+        });
+    </script>
+
+
+</head>
+
+
+<body>
+    <main>
+
+        <div class="float-container">
+            <div class="float-child1">
+                <div class="green"> Jack’s Wholesale
+                    <p id="Store_Info">
+                        Jack’s Wholesale is an international B2C fast fashion e-commerce 
+                        platform.The company mainly focuses on women's wear, but it also offers men's apparel,
+                        children's clothes, accessories, shoes, bags and other fashion items
+                    </p>
+                </div>
+                <br>
+                
+                <table id="ProductList">
+
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>Price in Cad</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>T-Shirts &ensp; <button id="Show_T-Shirts_info">Show/Hide Info</button>
+                                <p id="T-Shirts_info">60% Cotton, 40% Polyester,Machine Wash.
+                                </p>
+                            </td>
+                            <td>15</td>
+                        </tr>
+
+                        <tr>
+                            <td> Jackets &ensp; <button id="Show_Jackets_info">Show/Hide Info</button>
+                                <p id="Jackets_info">100% Polyester,Zipper closure, Machine Wash.
+                                </p>
+                            </td>
+                            <td>50</td>
+                        </tr>
+
+                        <tr>
+                            <td> Caps &ensp;&ensp;&ensp; <button id="Show_Caps_info">Show/Hide Info</button>
+                                <p id="Caps_info">100% Natural Cotton - This favorite natural fabric stays cool
+                                    in warm temperatures keeping you dry.
+                                </p>
+                            </td>
+                            <td>10</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan=2>
+                                <input type="button" value="Click To Shop"
+                                 onclick="window.open('Shop.html','_blank');" />
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
